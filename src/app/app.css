@@ -367,6 +367,7 @@
 .tilt-card {
   transform-style: preserve-3d;
   perspective: 1000px;
+  transition: transform 0.2s ease-out, box-shadow 0.3s ease;
 }
 
 /* Work History / Timeline */
