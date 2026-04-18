@@ -1,7 +1,10 @@
-<!-- Moving Background Elements -->
-<div class="bg-gradient"></div>
-<div class="moving-shape" style="top: 10%; left: 10%; animation-delay: 0s;"></div>
-<div class="moving-shape" style="top: 60%; left: 80%; animation-delay: -5s; width: 200px; height: 200px;"></div>
+<!-- Particle Canvas for High Graphics -->
+<canvas id="particle-canvas"></canvas>
+
+<!-- Floating Glowing Orbs -->
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
 
 <!-- Navbar -->
 <nav class="glass navbar">
@@ -20,13 +23,16 @@
 
 <!-- Hero Section -->
 <section id="home" class="hero">
-  <div class="hero-content glass fade-in">
-    <h1 class="gradient-text">Mohan Narasimha Varma Karri</h1>
-    <h2>Full Stack Developer</h2>
-    <p>Crafting scalable web applications with Java, Spring Boot, and Angular.</p>
-    <div class="hero-btns">
-      <a href="#contact" class="btn primary-btn">Get In Touch</a>
-      <a href="#experience" class="btn secondary-btn">View My Work</a>
+  <div class="hero-content-wrapper">
+    <div class="hero-card glass fade-in">
+      <div class="badge neon-text">Available for Work</div>
+      <h1 class="glitch-text" data-text="Mohan Narasimha">Mohan Narasimha</h1>
+      <h2 class="sub-text">Full Stack Developer & <span class="gradient-text">UI Architect</span></h2>
+      <p>I build high-performance digital architectures with Java, Spring Boot, and modern Front-end frameworks.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn pulse-btn primary-btn">Start a Project</a>
+        <a href="#experience" class="btn secondary-btn glass-btn">View My Portfolio</a>
+      </div>
     </div>
   </div>
 </section>
@@ -34,68 +40,75 @@
 <!-- About Section -->
 <section id="about" class="fade-section">
   <div class="section-header fade-in">
-    <h2 class="gradient-text">About Me</h2>
-    <div class="underline"></div>
+    <span class="section-badge">01 // IDENTITY</span>
+    <h2 class="neon-title">About Me</h2>
   </div>
-  <div class="glass about-card fade-in">
-    <p>
-      Results-oriented Full-Stack Developer with extensive experience in designing, developing, and deploying scalable web applications. 
-      Proficient in Java, Spring Boot, and Angular, with strong expertise in complex business workflows, real-time data processing, and third-party API integrations.
-    </p>
-    <div class="about-stats">
-      <div class="stat">
-        <span class="gradient-text">1+</span>
-        <p>Years Experience</p>
-      </div>
-      <div class="stat">
-        <span class="gradient-text">3</span>
-        <p>Projects Done</p>
+  <div class="glass about-card fade-in tilt-card">
+    <div class="about-content">
+      <p>
+        I am a Results-oriented Full-Stack Developer focused on building **Scalable, High-Impact Web Applications**. 
+        My design philosophy is simple: **Technical Precision meets Visual Excellence**.
+      </p>
+      <div class="about-grid">
+        <div class="stat-box glass">
+          <span class="count rainbow-text">1+</span>
+          <p>Years</p>
+        </div>
+        <div class="stat-box glass">
+          <span class="count rainbow-text">3</span>
+          <p>Projects</p>
+        </div>
+        <div class="stat-box glass">
+          <span class="count rainbow-text">100%</span>
+          <p>Success</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Skills Section -->
+<!-- Skills Section with 3D Tilt Cards -->
 <section id="skills" class="fade-section">
   <div class="section-header fade-in">
-    <h2 class="gradient-text">Technical Skills</h2>
-    <div class="underline"></div>
+    <span class="section-badge">02 // ARSENAL</span>
+    <h2 class="neon-title">Technical Skills</h2>
   </div>
   <div class="skills-grid">
-    <div class="skill-category glass glass-hover fade-in">
-      <i class="fas fa-code"></i>
+    <div class="skill-card glass tilt-card fade-in">
+      <div class="icon-box neon-cyan-bg">
+        <i class="fas fa-code"></i>
+      </div>
       <h3>Languages</h3>
-      <ul>
-        <li>Java (Core)</li>
-        <li>JavaScript</li>
-        <li>HTML5 & CSS</li>
-      </ul>
+      <div class="skill-tags">
+        <span>Java</span><span>JavaScript</span><span>HTML5</span><span>CSS</span>
+      </div>
     </div>
-    <div class="skill-category glass glass-hover fade-in">
-      <i class="fas fa-layer-group"></i>
+    <div class="skill-card glass tilt-card fade-in">
+      <div class="icon-box neon-purple-bg">
+        <i class="fas fa-layer-group"></i>
+      </div>
       <h3>Frameworks</h3>
-      <ul>
-        <li>Spring Boot</li>
-        <li>Angular</li>
-        <li>Node.js & Express</li>
-      </ul>
+      <div class="skill-tags">
+        <span>Spring Boot</span><span>Angular</span><span>Node.js</span><span>Express</span>
+      </div>
     </div>
-    <div class="skill-category glass glass-hover fade-in">
-      <i class="fas fa-database"></i>
+    <div class="skill-card glass tilt-card fade-in">
+      <div class="icon-box neon-pink-bg">
+        <i class="fas fa-database"></i>
+      </div>
       <h3>Databases</h3>
-      <ul>
-        <li>MySQL</li>
-        <li>MongoDB</li>
-      </ul>
+      <div class="skill-tags">
+        <span>MySQL</span><span>MongoDB</span>
+      </div>
     </div>
-    <div class="skill-category glass glass-hover fade-in">
-      <i class="fas fa-globe"></i>
+    <div class="skill-card glass tilt-card fade-in">
+      <div class="icon-box neon-gold-bg">
+        <i class="fas fa-globe"></i>
+      </div>
       <h3>Web & API</h3>
-      <ul>
-        <li>RESTful API</li>
-        <li>Razorpay Integration</li>
-        <li>WhatsApp API</li>
-      </ul>
+      <div class="skill-tags">
+        <span>RESTful</span><span>Razorpay</span><span>WhatsApp</span>
+      </div>
     </div>
   </div>
 </section>
@@ -103,21 +116,15 @@
 <!-- Experience Section -->
 <section id="experience" class="fade-section">
   <div class="section-header fade-in">
-    <h2 class="gradient-text">Work History</h2>
-    <div class="underline"></div>
+    <span class="section-badge">03 // JOURNEY</span>
+    <h2 class="neon-title">Work History</h2>
   </div>
-  <div class="timeline">
-    <div class="timeline-item glass fade-in">
-      <div class="timeline-dot"></div>
-      <div class="timeline-date">5/2025 - Present</div>
+  <div class="timeline-v2">
+    <div class="timeline-card glass fade-in">
+      <span class="date-tag">2025 - PRESENT</span>
       <h3>Full-Stack Developer</h3>
-      <h4>Applots Pvt Ltd - Tanuku, IN</h4>
-      <ul>
-        <li>Engineered a catering platform with 4-step workflow and real-time slot locking.</li>
-        <li>Developed modular components using Angular and Express.js for scalability.</li>
-        <li>Integrated Razorpay API for secure online payments.</li>
-        <li>Built WhatsApp notification engine for real-time tracking.</li>
-      </ul>
+      <h4>Applots Pvt Ltd</h4>
+      <p style="margin-top: 15px;">Driving digital transformation through automated catering platforms and school management systems.</p>
     </div>
   </div>
 </section>
@@ -125,11 +132,11 @@
 <!-- Projects Section -->
 <section id="projects" class="fade-section">
   <div class="section-header fade-in">
-    <h2 class="gradient-text">Featured Projects</h2>
-    <div class="underline"></div>
+    <span class="section-badge">04 // CREATIONS</span>
+    <h2 class="neon-title">Featured Projects</h2>
   </div>
   <div class="projects-grid">
-    <div class="project-card glass glass-hover fade-in">
+    <div class="project-card glass tilt-card fade-in">
       <div class="project-content">
         <h3>Catering Management System</h3>
         <p>A full-stack automation platform for catering operations with real-time slot locking and automated payment links.</p>
@@ -140,7 +147,7 @@
         </div>
       </div>
     </div>
-    <div class="project-card glass glass-hover fade-in">
+    <div class="project-card glass tilt-card fade-in">
       <div class="project-content">
         <h3>School Management System</h3>
         <p>End-to-end administration system automating fee tracking and student communication.</p>
@@ -157,47 +164,45 @@
 <!-- Contact Section -->
 <section id="contact" class="fade-section">
   <div class="section-header fade-in">
-    <h2 class="gradient-text">Contact Me</h2>
-    <div class="underline"></div>
+    <span class="section-badge">04 // CONNECT</span>
+    <h2 class="neon-title">Contact Me</h2>
   </div>
-  <div class="contact-container glass fade-in">
-    <div class="contact-info">
-      <div class="info-item">
-        <i class="fas fa-envelope"></i>
-        <p>mohanvarma789@gmail.com</p>
-      </div>
-      <div class="info-item">
-        <i class="fas fa-phone"></i>
-        <p>+91 9659834444</p>
-      </div>
-      <div class="info-item">
-        <i class="fas fa-map-marker-alt"></i>
-        <p>Vanapalli, Andhra Pradesh</p>
-      </div>
+  <div class="contact-panel glass fade-in">
+    <div class="contact-grid">
+      <form class="neo-form" (ngSubmit)="submitForm()" #contactForm="ngForm">
+        <div class="input-group">
+          <input type="text" placeholder="Full Name" name="name" [(ngModel)]="formData.name" required>
+        </div>
+        <div class="input-group">
+          <input type="email" placeholder="Email Address" name="email" [(ngModel)]="formData.email" required>
+        </div>
+        <div class="input-group">
+          <textarea placeholder="Tell me about your project" name="message" [(ngModel)]="formData.message" required></textarea>
+        </div>
+        <button type="submit" class="glitch-btn" [disabled]="!contactForm.form.valid || isSubmitting()">
+          <span class="btn-text" *ngIf="!isSubmitting()">SEND MESSAGE</span>
+          <span class="btn-text" *ngIf="isSubmitting()"><i class="fas fa-sync fa-spin"></i> SENDING...</span>
+        </button>
+      </form>
     </div>
-    <form class="contact-form" (ngSubmit)="submitForm()" #contactForm="ngForm">
-      <input type="text" placeholder="Your Name" class="glass" name="name" [(ngModel)]="formData.name" required>
-      <input type="email" placeholder="Your Email" class="glass" name="email" [(ngModel)]="formData.email" required>
-      <textarea placeholder="Your Message" class="glass" name="message" [(ngModel)]="formData.message" required></textarea>
-      <button type="submit" class="btn primary-btn" [disabled]="!contactForm.form.valid || isSubmitting()">
-        <span *ngIf="!isSubmitting()">Send Message</span>
-        <span *ngIf="isSubmitting()"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
-      </button>
-    </form>
   </div>
 </section>
 
 <!-- Success Modal -->
-<div class="success-modal glass" *ngIf="showSuccess()">
+<div class="neon-modal glass" *ngIf="showSuccess()">
   <div class="modal-content">
-    <i class="fas fa-check-circle"></i>
-    <h3>Message Sent!</h3>
-    <p>Thank you, Mohan will get back to you shortly.</p>
-    <button (click)="showSuccess.set(false)" class="btn primary-btn">Close</button>
+    <div class="success-icon">
+      <i class="fas fa-check"></i>
+    </div>
+    <h3>Mission Successful</h3>
+    <p>Message sent to base. Mohan will respond shortly.</p>
+    <button (click)="showSuccess.set(false)" class="btn primary-btn">Understood</button>
   </div>
 </div>
 
-<footer class="glass">
-  <p>&copy; 2026 Mohan Narasimha | Full Stack Developer | Transforming complex challenges into elegant digital solutions.</p>
-  <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 5px;">Designed with precision & built with passion.</p>
+<footer class="glass footer-neon">
+  <div class="footer-content">
+    <p>&copy; 2026 Mohan Narasimha</p>
+    <p class="mission">Transforming complex challenges into elegant digital solutions.</p>
+  </div>
 </footer>
